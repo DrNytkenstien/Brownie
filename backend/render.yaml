@@ -1,4 +1,4 @@
-services:
+﻿services:
   - type: web
     name: secureauth-backend
     env: node
@@ -9,8 +9,6 @@ services:
         value: production
       - key: PORT
         value: 10000
-      - key: MONGODB_URI
-        value: your_mongodb_uri_here
       - key: JWT_SECRET
         value: your_secure_jwt_secret_here
       - key: CORS_ORIGIN

@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+﻿import dotenv from 'dotenv';
 
 dotenv.config();
 
@@ -31,17 +31,11 @@ export const config = {
     secret: process.env.SESSION_SECRET || 'change_this_in_production',
   },
 
-  // Database
-  database: {
-    mongoUri: process.env.MONGODB_URI || 'mongodb://localhost:27017/secureauth',
-    useInMemory: process.env.USE_IN_MEMORY !== 'false', // Default to in-memory
-  },
-
   // Rate limiting
   rateLimit: {
     windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS || '900000', 10),
     maxRequests: parseInt(process.env.RATE_LIMIT_MAX_REQUESTS || '5', 10),
-  },
+  }
 };
 
 export default config;

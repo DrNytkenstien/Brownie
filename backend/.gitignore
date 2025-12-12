@@ -16,3 +16,5 @@ yarn-error.log*
 .cache/
 build/
 coverage/
+.vercel
+.env*.local
